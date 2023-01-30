@@ -1,2 +1,2 @@
 # python-kivy
-Not sure what it is but it sounds good. Took me an hour just to get it installed probably.
+Not sure what it is but it sounds good. Took me an hour just to get it installed probably. If the install guide simply stated "does't work with python 3.10" it would have been soooo much easier.
