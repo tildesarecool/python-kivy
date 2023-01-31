@@ -1,13 +1,31 @@
 BoxLayoutExample:
+# apparently hash marks are comments in kv files too
+# detailed sizing/orientation info is at the 35 min mark or so
 
 <BoxLayoutExample>:
-    orientation: "vertical"
+    orientation: "horizontal"
     Button:
         text: "A"
-    Button:
-        text: "B"
+        size_hint: .5, .5
+        pos_hint: { "center_y": .5 }
+        # size_hint: .8, .5 # x and y percentage - proportion of other elements (proportions adjust with window size)
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "10dp"
+        Button:
+            text: "B1"
+        Button:
+            text: "B2"
+        Button:
+            text: "B3"
+        Button:
+            text: "B4"
+
     Label:
         text: "C"
+#        width: "100dp"
+#        height: "60dp"
+#        pos_hint: { "x": .5 }
                 
 <MainWidget>:
     Button:

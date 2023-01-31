@@ -5,6 +5,10 @@
 # courtesy of freeCodeCamp
 # video resources
 # https://codewithjonathan.net/courses.html
+# embed layouts: 39:30 min in
+# anchorlayout - 41:13 mark
+
+
 
 
 from kivy.app import App 
