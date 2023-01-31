@@ -1,4 +1,21 @@
-BoxLayoutExample:
+# to see other layout examples just put the name here, like  BoxLayoutExample
+AnchorLayoutExample:
+
+<AnchorLayoutExample>:
+# with anchor buttons can over lap each other in Z orientation or whatever
+    # right, left, center for x 
+    # top, bottom, center for y 
+    anchor_x: "center"
+    anchor_y: "top"
+    BoxLayout:
+        Button:
+            text: "A"
+        #    size_hint: .2, .2
+        Button:
+            text: "B"
+        #    size_hint: .1, .1
+
+# BoxLayoutExample:
 # apparently hash marks are comments in kv files too
 # detailed sizing/orientation info is at the 35 min mark or so
 

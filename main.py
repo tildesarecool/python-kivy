@@ -8,13 +8,23 @@
 # embed layouts: 39:30 min in
 # anchorlayout - 41:13 mark
 
+# i just skipped 'page layout' and pretty much all the rest of it. 
+# I couldn't really follow it anyway
+# so i'm jumping to widgets - 1:07 or so
 
 
 
 from kivy.app import App 
+from kivy.uix.anchorlayout import AnchorLayout
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivy.uix.widget import Widget
+
+
+class AnchorLayoutExample(AnchorLayout):
+    pass
+
+
 
 class BoxLayoutExample(BoxLayout):
     pass
