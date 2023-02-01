@@ -15,26 +15,18 @@
 
 from kivy.app import App 
 from kivy.uix.anchorlayout import AnchorLayout
-from kivy.uix.gridlayout import GridLayout
-from kivy.properties import StringProperty
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivy.uix.widget import Widget
 
-class WidgetsExample(GridLayout):
-    #no ___init necessary
-    # event on clock called via kv file
-    count = 1
-    my_text = StringProperty("Hello!")
-    def on_button_click(self):
-        self.count = self.count + 1
-        print(f"Button Clicked {self.count}")
-        #self.my_text =  self.count
-        
-        Button.text=f"was clicked {self.count}"
-        
-        
 
+class AnchorLayoutExample(AnchorLayout):
+    pass
+
+
+
+class BoxLayoutExample(BoxLayout):
+    pass
     # instead of using kivy file
     # did below as example of laying out UI in py file
     # then switched back to kv file
@@ -53,14 +45,13 @@ class WidgetsExample(GridLayout):
         self.add_widget(b1)
         self.add_widget(b2)
         self.add_widget(b3)
-
+"""
 
 class MainWidget(Widget):
     pass
-"""
+
 class TheLabApp(App):
     pass
-
 
 TheLabApp().run()
 

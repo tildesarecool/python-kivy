@@ -1,58 +1,11 @@
-# to see other layout examples just put the name here, like  BoxLayoutExample
-AnchorLayoutExample:
+WidgetsExample:
 
-<AnchorLayoutExample>:
-# with anchor buttons can over lap each other in Z orientation or whatever
-    # right, left, center for x 
-    # top, bottom, center for y 
-    anchor_x: "center"
-    anchor_y: "top"
-    BoxLayout:
-        Button:
-            text: "A"
-        #    size_hint: .2, .2
-        Button:
-            text: "B"
-        #    size_hint: .1, .1
-
-# BoxLayoutExample:
-# apparently hash marks are comments in kv files too
-# detailed sizing/orientation info is at the 35 min mark or so
-
-<BoxLayoutExample>:
-    orientation: "horizontal"
+<WidgetsExample@GridLayout>:
+    cols: 3
     Button:
-        text: "A"
-        size_hint: .5, .5
-        pos_hint: { "center_y": .5 }
-        # size_hint: .8, .5 # x and y percentage - proportion of other elements (proportions adjust with window size)
-    BoxLayout:
-        orientation: "vertical"
-        spacing: "10dp"
-        Button:
-            text: "B1"
-        Button:
-            text: "B2"
-        Button:
-            text: "B3"
-        Button:
-            text: "B4"
-
+        text: "Click here"
+        # on press defined inside class function in main py script
+        # use 'root' instead of 'self' in this case
+        on_press: root.on_button_click()
     Label:
-        text: "C"
-#        width: "100dp"
-#        height: "60dp"
-#        pos_hint: { "x": .5 }
-                
-<MainWidget>:
-    Button:
-        text: "Hello"
-        size: "100dp", "80dp"
-        pos: "100dp", "200dp"
-        color: 0, 0, 1, 1
-    Label:
-        text: "Hello2"
-        size: "100dp", "80dp"
-        pos: "200dp", "300dp"
-        color: 1, 0, 0, 1
-
+        text: root.my_text
