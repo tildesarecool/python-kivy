@@ -25,14 +25,20 @@ class WidgetsExample(GridLayout):
     #no ___init necessary
     # event on clock called via kv file
     count = 1
-    my_text = StringProperty("Hello!")
+    my_text = StringProperty("1")
     def on_button_click(self):
+        print("Button Clicked")
+        self.count += 1
+        self.my_text = str(self.count)
+        
+
+        """
         self.count = self.count + 1
         print(f"Button Clicked {self.count}")
         #self.my_text =  self.count
         
         Button.text=f"was clicked {self.count}"
-        
+        """
         
 
     # instead of using kivy file
